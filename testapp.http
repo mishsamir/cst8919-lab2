@@ -1,0 +1,13 @@
+@baseUrl = https://assignment-falskapp-fhhqazexdqgtdthe.eastus-01.azurewebsites.net
+@valid_token = eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiaXNzIjoiaHR0cHM6Ly9kZXYtdm1kdDM2N212MWhvYXg1bC51cy5hdXRoMC5jb20vIn0..vZieycxJPn5n-WOX.k6KO4h_JwspWqOm2nJrdBi_KlDFBfWla1lHXm0NT43MhnfDZaZtgMMqwveF91goJdHU3Qy5GqVnu_MdL1mHnDF5-je2qgi1lPxc5a1x8sHNC_tmIhuyBnJ0U1239OmydJY70XfmBsQvXJxU7ptMQOszIgDNdhQ3CdYS9ZstxOvEX2FPYvcNHzxdH7iY9crkpKxdB1I8n5MwV1G-OttQXZTlf9B_Uk5SO8iwxLwpcjlQtE8I8oduBPE1dBAI56Lm4bRD7tiZvwQrBIXxgTLu9nqgVAubE-AOdjzow3GUTEbdu-uEH1k5X2lKczH69iL8palexFsuGq6HSJYDgw_gszaqeGP8yAOo.FWUi9q_dRvomkgt3khO2zA
+
+### Valid Access
+GET {{baseUrl}}/protected
+Authorization: Bearer {{valid_token}}
+User-Agent: TestUser-001
+
+###
+
+### Invalid Access
+GET {{baseUrl}}/protected
+User-Agent: UnauthorizedUser-001
