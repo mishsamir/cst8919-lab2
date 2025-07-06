@@ -116,7 +116,6 @@ def protected():
 
 @app.route("/logout")
 def logout():
-    # Log logout attempt
     if 'user' in session:
         user_info = session.get("user", {}).get('userinfo', {})
         user_id = user_info.get('sub', 'Unknown')
