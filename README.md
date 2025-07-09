@@ -5,6 +5,8 @@ This assignment demonstrates a secure Flask web application with Auth0 authentic
 ## Setup Instructions
 
 ### 1. Auth0 Configuration
+### Video Demo
+[Click Here](https://youtu.be/-Ew6Q45D6QI)
 
 #### Create Auth0 Application
 1. Go to [Auth0 Dashboard](https://auth0.com) and sign up/login
